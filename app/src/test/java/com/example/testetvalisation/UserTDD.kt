@@ -14,7 +14,7 @@ class UserTDD {
     fun setup()
     {
         users = mutableListOf()
-        addUser()
+        //addUser()
     }
 
     @Test
@@ -37,5 +37,22 @@ class UserTDD {
         user.name = "Yoan"
         assertThat( users!![0].name, equalTo("Cedric") )
     }
+
+
+    /*
+
+    Fonctionnalité: Réserver une chambre en ligne
+        Afin de gagner de l'argent
+        Les clients doivent être capables
+        de réserver 24/24.
+
+      Scénario: Réserver la dernière chambre
+        Etant donné qu'il reste 1 chambre
+        Et que je suis sur mon tel
+        Quand j'appuie sur le bouton " Réserver "
+        Alors je devrai réserver une chambre
+
+
+     */
 
 }
